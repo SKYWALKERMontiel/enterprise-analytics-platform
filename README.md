@@ -1,4 +1,5 @@
 # Enterprise Analytics Platform
+### End-to-End Data Architecture for Business Analytics
 
 This project documents the design and implementation of an enterprise analytics platform used to integrate operational data sources, centralize business metrics through a semantic model, and deliver analytical dashboards for commercial and logistics operations.
 
@@ -6,7 +7,20 @@ The platform consolidates information from multiple systems to enable data-drive
 
 ---
 
+## Key Features
+
+- Integration of multiple enterprise data sources (SAP, Mobiliza, MySQL)
+- Centralized analytical storage using Azure SQL
+- Enterprise semantic model for standardized business metrics
+- Analytical dashboards built in Power BI
+- Excel reports connected to the semantic model
+- Data-driven insights for commercial and logistics operations
+
+---
+
 # Architecture Overview
+
+![Enterprise Architecture](architecture/architecture-diagram.png)
 
 Operational Systems  
 (SAP / Mobiliza / MySQL)
@@ -96,13 +110,20 @@ Key indicators:
 
 # Technologies Used
 
-- Power BI
-- DAX
+### Data Platform
 - Azure SQL
 - SQL Server
 - Microsoft Fabric
+
+### Analytics
+- Power BI
+- DAX
 - Excel
+
+### Source Systems
 - SAP HANA
+- Mobiliza
+- MySQL
 
 ---
 
@@ -119,6 +140,28 @@ The analytics platform enabled:
 ---
 
 # Repository Structure
+
+enterprise-analytics-platform
+│
+├── architecture
+│   ├── architecture-diagram.png
+│   └── README.md
+│
+├── data-model
+│   └── semantic-model-diagram.png
+│
+├── dashboards
+│   └── README.md
+│
+├── sql
+│   └── example_queries.sql
+│
+├── documentation
+│   └── project_overview.md
+│
+└── README.md
+
+This repository documents the architecture, semantic model, and analytical components of the enterprise analytics platform.
 
 ---
 
