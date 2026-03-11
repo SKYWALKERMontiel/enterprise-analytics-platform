@@ -19,3 +19,7 @@ Examples of core entities included in the model:
 - Transfers
 - Stores
 - Products
+
+## Semantic Model Diagram
+
+![Semantic Model](semantic-model-diagram.png)
