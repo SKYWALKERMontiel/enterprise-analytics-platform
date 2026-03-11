@@ -1,28 +1,11 @@
 # Data Architecture
 
-The enterprise analytics platform integrates multiple operational systems into a centralized analytics architecture.
+## Enterprise Analytics Platform Architecture
 
-## Architecture Flow
+![Architecture Diagram](architecture-diagram.png)
 
-Operational Systems  
-(SAP / Mobiliza / MySQL)
+The architecture integrates multiple operational systems into a centralized analytics platform.
 
-↓
+### Data Flow
 
-Data Storage  
-(Azure SQL)
-
-↓
-
-Semantic Layer  
-(HygeiaMS)
-
-↓
-
-Analytics Layer  
-(Power BI / Excel)
-
-↓
-
-Business Users  
-(Commercial, Sales, Logistics, Management)
+Operational Systems → Azure SQL → Semantic Model → Analytics Layer → Business Users
