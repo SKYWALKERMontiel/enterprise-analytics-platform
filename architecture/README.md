@@ -4,8 +4,26 @@
 
 ![Architecture Diagram](architecture-diagram.png)
 
-The architecture integrates multiple operational systems into a centralized analytics platform.
+This architecture integrates multiple operational systems into a centralized analytics platform used for commercial and logistics analytics.
 
-### Data Flow
+### Data Sources
+- SAP HANA
+- Mobiliza
+- MySQL
 
-Operational Systems → Azure SQL → Semantic Model → Analytics Layer → Business Users
+### Data Storage
+- Azure SQL Database used as the central analytical repository.
+
+### Semantic Layer
+- **HygeiaMS semantic model**
+- Standardized KPIs built using **DAX**
+
+### Analytics Layer
+- Power BI dashboards
+- Excel analytical reports connected to the semantic model
+
+### Business Users
+- Commercial
+- Sales
+- Logistics
+- Management
